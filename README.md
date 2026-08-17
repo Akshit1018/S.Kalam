@@ -1,37 +1,44 @@
-# S.Kalam
+# Kalam — Open Source Private Markdown Notebook
 
-**Simple name:** Kalam
+**Kalam** is a private **Markdown notebook** with a pen that can continue, tighten, and suggest when you ask. Local-first vault. No feed. No public notes unless you export them.
 
-Private Markdown notebook with writing help.
+[![License: MIT](https://img.shields.io/badge/License-MIT-zinc.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.Kalam** (private).
+## Features
 
-## Run on this Mac
+- Local Markdown vault
+- Writing help on demand (continue / tighten / suggest)
+- Quiet, dark, distraction-free chrome
+- Optional Grok login for sync experiments
+- PWA-ready
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Writers who want **Obsidian-simple** in the browser
+- People who refuse a notes social network
+- Developers building an **AI writing room**
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.Kalam"
+git clone https://github.com/Akshit1018/S.Kalam.git
+cd S.Kalam
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+Optional: `XAI_API_KEY` for the pen.
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+## Tech stack
 
-## Notes
+React 19 · TanStack Start · Vite · Tailwind · local vault
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+## License
+
+[MIT](LICENSE)
+
+## Keywords
+
+markdown notebook, private notes app, AI writing assistant, local-first notes, open source obsidian alternative, distraction-free writing
